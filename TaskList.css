@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main_div{
+    margin: auto;
+    margin-top: 10vh;
+    width: 60vw;
+    height: 75vh;
+    /* border: 1px solid gray; */
+}
+.todo_container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    padding: 17px;
+    cursor: pointer;
+    
+}
+.todo_container_one{
+    letter-spacing: 0.5px;
+    font-size: 60px;
+    font-family:  sans-serif;
+}
+#tasks{
+    font-weight:700 ;
+
+}
+#list{
+    font-weight: 100 ;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+.todo_container_two{
+    display: flex;
+    word-spacing: 2px;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+
+}
+#icon{
+    /* color: #FC8621; */
+    font-weight: bolder ;
+    margin-right: 9px;
+   
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: auto;
+    color: white;
+    background-color:#DF2E2E ;
+    border-radius:50% ;
+    cursor: pointer;
+
+}
+
+#add_list{
+   
+    font-weight: 100;
+    color: gray;
+   
+}
+.card_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  
+    
+}
+.card{
+    height:45vh;
+    width: 14vw;
+    border: 1px ridge #FC8621;
+    border-radius: 10px;
+    box-shadow:5px 5px 7px 2px  lightgray;
+    cursor: pointer;
+    transition: transform 1s;
+
+}
+
+#card_heading{
+    color:#FF2626 ;
+    font-family:  sans-serif;
+    font-weight:400;
+    font-size: 1.6em;
+    padding: 20px;
+    /* border-bottom:2.5px solid lightgray ; */
+}
+#completed_task{
+    padding: 15px;
+    color:#FF2626 ;
+    font-family: sans-serif;
+    font-weight:200;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2em;
+}
+.pending_line{
+    padding: 15px;
+    color:gray ;
+    font-family: sans-serif;
+    font-weight:200;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 7px;
+    
+}
+hr{
+    float:right;
+    color:lightgray;
+     width:83%;
+}
+@media screen and (max-width: 720px) {
+/* @media only screen and (max-width: 650px) { */
+    /* .main_div{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    } */
+    .todo_container{
+        display: flex;       
+        font-size:45px;       
+        cursor: pointer;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        
+    }
+    .card_container{
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        text-align: center;
+        margin-top:2em;
+        flex-wrap:wrap ;   
+        flex-direction: row;
+        
+    }
+    .card{
+        width: 90%;
+        margin-top:2em;
+    }
+    
+  }
+
